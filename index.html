@@ -154,7 +154,7 @@
               <div class="offset-top-35 offset-lg-top-60 view-animate fadeInLeftSm delay-08">
                 <p>One of the world's premier academic and research institutions, the Jonathan Carroll University has driven new ways of thinking since our 1876 founding. Today, JCU is an intellectual destination that draws inspired scholars to our Hyde Park and international campuses, keeping JCU at the nexus of ideas that challenge and change the world.</p>
               </div>
-              <div class="offset-top-30 view-animate fadeInLeftSm delay-1"><a class="btn btn-ellipse btn-icon btn-icon-right button-default" href="history.html"><span class="icon fa fa-arrow-right"></span><span>Learn More</span></a></div>
+              <!-- <div class="offset-top-30 view-animate fadeInLeftSm delay-1"><a class="btn btn-ellipse btn-icon btn-icon-right button-default" href="history.html"><span class="icon fa fa-arrow-right"></span><span>Learn More</span></a></div> -->
             </div>
           </div>
         </div>
@@ -514,10 +514,10 @@
             course.tutors.forEach((tutor) => {
                 facilitators += `
                     <div class="col-md-6 col-lg-3">
-                        <article class="post-news post-news-mod-1 view-animate fadeInLeftSm delay-04"><a href="course.html" course-pointer="course"><img class="img-responsive img-fullwidth" src="${tutor.img || 'https://livedemo00.template-help.com/wt_59029_v3/images/blog/news-01-370x240.jpg'}" width="370" height="240" alt=""></a>
+                        <article class="post-news post-news-mod-1 view-animate fadeInLeftSm delay-04"><img class="img-responsive img-fullwidth" src="${tutor.img || 'https://livedemo00.template-help.com/wt_59029_v3/images/blog/news-01-370x240.jpg'}" width="370" height="240" alt="">
                             <div class="post-news-body">
                                 <h6>
-                                    <a href="${tutor.profile || '#'}" target="_blank" course-pointer="course">${tutor.name}</a>
+                                    <a href="${tutor.profile || ''}" target="_blank">${tutor.name}</a>
                                 </h6>
                                 <div class="offset-top-20">
                                     <p>${course.title}</p>
