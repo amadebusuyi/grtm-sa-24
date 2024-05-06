@@ -21,7 +21,7 @@ const Courses = [
                 picture: ``,
             },
             {
-                name: 'Emmanuel Osu',
+                name: 'Emmanuel Osuh',
                 img: `https://media.licdn.com/dms/image/D4E03AQGv7BWbEkIb2Q/profile-displayphoto-shrink_800_800/0/1706031261508?e=1720656000&v=beta&t=IOaB-1Q97QP_IlkPFsM7O9U0k1F_ZBiwYP5xfeav_eE`,
                 occupation: 'Frontend Developer, Money Tree',
                 linkedIn: `https://linkedin.com/in/adebowale-adebusuyi`,
