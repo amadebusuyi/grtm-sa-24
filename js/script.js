@@ -656,7 +656,8 @@
 		    defaultMessage: 'Invalid phone number format',
 		    validator:      function () {
 			    if (this.value === '') return true;
-			    else return /^(\+\d)?[0-9\-\(\) ]{5,}$/i.test(this.value);
+          if (![10, 11].includes(this.value.length)) return false;
+			    return /^(\+\d)?[0-9\-\(\) ]{10,}$/i.test(this.value);
 		    }
 	    });
 
@@ -693,7 +694,15 @@
 		    },
 		    {
 			    type:       regula.Constraint.Numeric,
-			    newMessage: "Only numbers are required"
+			    newMessage: "Not a valid number."
+		    },
+		    {
+			    type:       regula.Constraint.PhoneNumber,
+			    newMessage: "Not a valid phone number format.",
+          validator:      function () {
+            if (this.value === '') return true;
+            else return /^(\+\d)?[0-9\-\(\) ]{5,}$/i.test(this.value);
+          }
 		    },
 		    {
 			    type:       regula.Constraint.Selected,
@@ -707,7 +716,8 @@
 
 		    regula.override({
 			    constraintType: regularConstraint.type,
-			    defaultMessage: regularConstraint.newMessage
+			    defaultMessage: regularConstraint.newMessage,
+          validator: regularConstraint.validator,
 		    });
 	    }
     }

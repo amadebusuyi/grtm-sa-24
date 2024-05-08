@@ -56,7 +56,7 @@ const Courses = [
             },
             {
                 name: 'Aaron Ugede',
-                img: `../images/image.png`
+                img: `../images/aaron.png`
             },
             {
                 name: 'King Ezic',
@@ -64,7 +64,7 @@ const Courses = [
             },
             {
                 name: 'Junior Livinus',
-                img: `../images/image.png`
+                img: `../images/junior.png`
             },
         ]
     },
@@ -190,20 +190,20 @@ const OtherCourses = [
                 img: `https://media.licdn.com/dms/image/C4D03AQHUQyy-sXTPGg/profile-displayphoto-shrink_800_800/0/1653129874736?e=1720656000&v=beta&t=on-4SVcS-hDDlRGqGIcX5eOZ2O7BPOCkkoEMV_SPrgA`,
             },
             {
-                name: 'Bola Hadassah',
-                img: `../images/image.png`,
+                name: 'Bola Oyewole',
+                img: `../images/bola.png`,
             },
             {
                 name: 'Oluwatobi Akinseye',
-                img: `../images/image.png`,
+                img: `../images/tobi.jpeg`,
             },
             {
                 name: 'Chisom ...',
                 img: `../images/image.png`,
             },
             {
-                name: 'Kingsley ...',
-                img: `../images/image.png`,
+                name: 'Kingsley Iwueze',
+                img: `../images/kingsley.jpeg`,
             },
         ]
     },
